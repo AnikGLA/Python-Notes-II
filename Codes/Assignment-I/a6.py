@@ -43,6 +43,14 @@ class Bank:
         else:
             print("One or both accounts not found.")
 
+    def display_all_accounts(self):
+        print("\nAll Accounts:")
+        for account in self.accounts:
+            print(f"Account Number: {account.account_number}")
+            print(f"Account Holder: {account.account_holder}")
+            print(f"Balance: ${account.get_balance()}")
+            print("-----------------------")
+
 # Example usage with user input:
 bank = Bank()
 
@@ -54,6 +62,8 @@ for i in range(num_accounts):
     initial_balance = float(input(f"Enter initial balance for Account {i + 1}: "))
     new_account = BankAccount(account_number, account_holder, initial_balance)
     bank.add_account(new_account)
+
+bank.display_all_accounts()
 
 # Displaying initial account balances
 print("\nInitial Account Balances:")
