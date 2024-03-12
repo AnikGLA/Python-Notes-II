@@ -1,0 +1,19 @@
+Problem Statement: Personalized Greeting Application
+
+Create a Tkinter GUI application that allows users to input their name using an Entry widget. Upon clicking a "Submit" button, display a personalized greeting message below the input area. Additionally, implement a feature that allows users to select their preferred greeting from a list of options (e.g., "Hello," "Hi," "Greetings"). Display the selected greeting along with the user's name when the "Submit" button is clicked.
+
+Requirements:
+The GUI should include:
+
+An Entry widget for users to input their name.
+A "Submit" button to trigger the greeting display.
+A Listbox containing different greeting options (e.g., "Hello," "Hi," "Greetings").
+A Label to display the personalized greeting.
+When the user clicks the "Submit" button:
+
+Retrieve the entered name from the Entry widget.
+Retrieve the selected greeting from the Listbox.
+Display a greeting message combining the selected greeting and the user's name.
+Ensure that the GUI is user-friendly, and the layout is well-organized.
+
+Implement error handling for cases where the user does not enter a name or does not select a greeting.
